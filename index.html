@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6b1e2e">
+  <meta name="description" content="Kevin and Pooja's wedding invitation. Join us to celebrate love and a new beginning.">
+  <title>Kevin & Pooja — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-progress" id="progress"></div>
+  <header class="cover" id="home">
+    <div class="cover-shade"></div>
+    <nav class="nav">
+      <a class="monogram" href="#home" aria-label="Kevin and Pooja home">K <span>&</span> P</a>
+      <a class="nav-link" href="#details">The celebrations <span>↗</span></a>
+    </nav>
+    <div class="cover-content">
+      <p class="eyebrow light">WITH THE BLESSINGS OF OUR FAMILIES</p>
+      <div class="ornament light-ornament">✦ ───────── ✦</div>
+      <h1>Kevin <em>&</em><br>Pooja</h1>
+      <p class="cover-subtitle">Two hearts. One beautiful beginning.</p>
+      <p class="cover-date" id="heroDate">OUR WEDDING DAY · DATE TO BE ANNOUNCED</p>
+      <button class="primary-button" id="openInvite">Open the invitation <span>↓</span></button>
+      <p class="tiny light">A little love, a lifetime together.</p>
+    </div>
+    <div class="side-note">A CELEBRATION OF LOVE · K + P</div>
+  </header>
+
+  <main>
+    <section class="intro section reveal">
+      <p class="eyebrow">THE NEXT CHAPTER</p>
+      <div class="ornament">✦ ─── ✦</div>
+      <h2>With joyful hearts,<br>we invite you to celebrate</h2>
+      <p class="body-copy">Together with our families, we, Kevin and Pooja, invite you to share in the happiness of our wedding and the beginning of our forever.</p>
+      <p class="script">Your presence will make our day even more special.</p>
+    </section>
+
+    <section class="details section" id="details">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2>The celebrations</h2>
+        <p class="body-copy">A day filled with love, laughter, blessings and beautiful memories.</p>
+      </div>
+      <div class="event-grid">
+        <article class="event-card reveal">
+          <div class="event-number">01</div>
+          <div class="event-icon">❋</div>
+          <p class="eyebrow">THE WEDDING</p>
+          <h3>Wedding Ceremony</h3>
+          <div class="event-rule"></div>
+          <p class="event-date" id="weddingDate">Date to be announced</p>
+          <p class="event-time" id="weddingTime">Time to be announced</p>
+          <p class="event-place" id="venueName">Venue name</p>
+          <p class="event-address" id="venueAddress">Venue address, city</p>
+          <a class="text-link" id="mapLink" href="https://maps.google.com" target="_blank" rel="noopener">View location ↗</a>
+        </article>
+        <article class="event-card event-card-dark reveal">
+          <div class="event-number">02</div>
+          <div class="event-icon">✧</div>
+          <p class="eyebrow">LET'S CELEBRATE</p>
+          <h3>Reception</h3>
+          <div class="event-rule"></div>
+          <p class="event-date" id="receptionDate">Date to be announced</p>
+          <p class="event-time" id="receptionTime">Time to be announced</p>
+          <p class="event-place" id="receptionVenue">Reception venue</p>
+          <p class="event-address" id="receptionAddress">Venue address, city</p>
+          <a class="text-link" id="receptionMapLink" href="https://maps.google.com" target="_blank" rel="noopener">View location ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-overlay"></div>
+      <div class="quote-content reveal">
+        <p class="eyebrow light">A PROMISE FOR ALWAYS</p>
+        <div class="quote-mark">“</div>
+        <blockquote>In all the world, there is no heart for me like yours.</blockquote>
+        <p class="quote-credit">— MAY OUR FOREVER BE FILLED WITH LOVE</p>
+      </div>
+    </section>
+
+    <section class="couple section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE PEOPLE OF THE DAY</p>
+        <h2>Meet the couple</h2>
+      </div>
+      <div class="couple-grid">
+        <article class="person reveal">
+          <div class="portrait portrait-kevin"><span>K</span></div>
+          <p class="eyebrow">THE GROOM</p>
+          <h3>Kevin</h3>
+          <p class="person-caption">A new adventure begins.</p>
+        </article>
+        <div class="ampersand reveal">&</div>
+        <article class="person reveal">
+          <div class="portrait portrait-pooja"><span>P</span></div>
+          <p class="eyebrow">THE BRIDE</p>
+          <h3>Pooja</h3>
+          <p class="person-caption">The beginning of forever.</p>
+        </article>
+      </div>
+      <p class="couple-note reveal">Two lives, two families, one story that we can't wait to begin.</p>
+    </section>
+
+    <section class="countdown-section">
+      <div class="countdown-inner reveal">
+        <p class="eyebrow light">UNTIL WE SAY “I DO”</p>
+        <h2>Counting the days</h2>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">--</strong><span>Days</span></div>
+          <div><strong id="hours">--</strong><span>Hours</span></div>
+          <div><strong id="minutes">--</strong><span>Minutes</span></div>
+          <div><strong id="seconds">--</strong><span>Seconds</span></div>
+        </div>
+        <p class="countdown-note" id="countdownNote">Set your wedding date in script.js to start the countdown.</p>
+      </div>
+    </section>
+
+    <section class="rsvp section reveal" id="rsvp">
+      <p class="eyebrow">IT WOULD MEAN THE WORLD TO US</p>
+      <div class="ornament">✦ ─── ✦</div>
+      <h2>Will you join us?</h2>
+      <p class="body-copy">Your blessings and presence are the greatest gifts. Let us know if you'll be celebrating with us.</p>
+      <a class="primary-button dark-button" id="rsvpLink" href="#" target="_blank" rel="noopener">Reply to invitation <span>↗</span></a>
+      <p class="tiny">With love and warm wishes,</p>
+      <p class="signature">Kevin & Pooja</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="monogram footer-monogram" href="#home">K <span>&</span> P</a>
+    <p>MADE WITH LOVE · KEVIN & POOJA</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
